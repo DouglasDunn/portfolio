@@ -20,9 +20,9 @@
             <nav>
                 <div class="row">
                     <ul class="main-nav">
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Work</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -32,7 +32,7 @@
             </div>
         </header>
 
-        <section class="section-services">
+        <section class="section-services" id="services">
             <div class="row">
                 <h2>services</h2>
             </div>
@@ -72,7 +72,7 @@
             </div>
         </section>
 
-        <section class="section-work">
+        <section class="section-work" id="work">
             <div class="row">
                 <h2>work</h2>
             </div>
@@ -109,136 +109,136 @@
                     <img src="resources/img/twitch.png" alt="Lisbon">
                 </div>
             </div> -->
+            <div class="row">
+                <div class="button-group filter-button-group">
+                    <button class="button is-checked" data-filter="*">all</button>
+                    <button class="button" data-filter=".client">client</button>
+                    <button class="button" data-filter=".app">app</button>
+                    <button class="button" data-filter=".word-press">wordpress</button>
+                </div>
+            </div>
 
             <div class="row">
-                <div class="button-group filters-button-group">
-                    <button class="button is-checked" data-filter="*">ALL</button>
-                    <button class="button" data-filter=".metal">CLIENT WORK</button>
-                    <button class="button" data-filter=".transition">APP</button>
-                    <button class="button" data-filter=".alkali, .alkaline-earth">WORDPRESS THEME</button>
-                    <!-- <button class="button" data-filter=":not(.transition)">not transition</button>
-                    <button class="button" data-filter=".metal:not(.transition)">metal but not transition</button>
-                    <button class="button" data-filter="numberGreaterThan50">number > 50</button>
-                    <button class="button" data-filter="ium">name ends with &ndash;ium</button> -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-3 box">
-                    <div class="container work-1">
-                        <a href="#">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h4>OMNIFOOD</h4>
-                                    <p>Website</p>
-                                </div>
+                <div class="grid">
+                    <div class="row">
+                        <div class="col span-1-of-3 box element-item client">
+                            <div class="container work-1">
+                                <a href="https://douglasdunn.github.io/omniFood/" target="_blank">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <h4>OMNIFOOD</h4>
+                                            <p>Website</p>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+                        </div>
+                        <div class="col span-1-of-3 box element-item app">
+                            <div class="container work-2">
+                                <a href="http://roguelike-dungeon-crawler.herokuapp.com/" target="_blank">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <h4>ROGUELIKE DUNGEON CRAWLER</h4>
+                                            <p>Application | Game</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col span-1-of-3 box element-item app">
+                            <div class="container work-3">
+                                <a href="http://codepen.io/djdunn15/full/aBMKEq/" target="_blank">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <h4>CAMPER LEADERBOARD</h4>
+                                            <p>Application</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col span-1-of-3 box">
-                    <div class="container work-2">
-                        <a href="#">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h4>ROGUELIKE DUNGEON CRAWLER</h4>
-                                    <p>Application | Game</p>
-                                </div>
+                    <div class="row">
+                        <div class="col span-1-of-3 box element-item app">
+                            <div class="container work-4">
+                                <a href="http://codepen.io/djdunn15/full/WoLWZe/" target="_blank">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <h4>SIMON</h4>
+                                            <p>Application | Game</p>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+                        </div>
+                        <div class="col span-1-of-3 box element-item app">
+                            <div class="container work-5">
+                                <a href="http://codepen.io/djdunn15/full/pNxQzB/" target="_blank">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <h4>TIC TAC TOE</h4>
+                                            <p>Application | Game</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col span-1-of-3 box element-item app">
+                            <div class="container work-6">
+                                <a href="http://codepen.io/djdunn15/full/MbqxPb/" target="_blank">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <h4>POMODORO CLOCK</h4>
+                                            <p>Application</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col span-1-of-3 box">
-                    <div class="container work-3">
-                        <a href="#">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h4>CAMPER LEADERBOARD</h4>
-                                    <p>Application</p>
-                                </div>
+                    <div class="row">
+                        <div class="col span-1-of-3 box element-item app">
+                            <div class="container work-7">
+                                <a href="http://codepen.io/djdunn15/full/XNBodB/" target="_blank">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <h4>CALCULATOR</h4>
+                                            <p>Application</p>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-3 box">
-                    <div class="container work-4">
-                        <a href="#">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h4>SIMON</h4>
-                                    <p>Application | Game</p>
-                                </div>
+                        </div>
+                        <div class="col span-1-of-3 box element-item app">
+                            <div class="container work-8">
+                                <a href="http://codepen.io/djdunn15/full/ENERwb/" target="_blank">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <h4>WEATHER APP</h4>
+                                            <p>Application</p>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col span-1-of-3 box">
-                    <div class="container work-5">
-                        <a href="#">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h4>TIC TAC TOE</h4>
-                                    <p>Application | Game</p>
-                                </div>
+                        </div>
+                        <div class="col span-1-of-3 box element-item app">
+                            <div class="container work-9">
+                                <a href="https://codepen.io/djdunn15/full/bBMrvx/" target="_blank">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <h4>TWITCH.TV</h4>
+                                            <p>Application</p>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col span-1-of-3 box">
-                    <div class="container work-6">
-                        <a href="#">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h4>POMODORO CLOCK</h4>
-                                    <p>Application</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-3 box">
-                    <div class="container work-7">
-                        <a href="#">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h4>CALCULATOR</h4>
-                                    <p>Application</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col span-1-of-3 box">
-                    <div class="container work-8">
-                        <a href="#">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h4>WEATHER APP</h4>
-                                    <p>Application</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col span-1-of-3 box">
-                    <div class="container work-9">
-                        <a href="#">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h4>TWITCH.TV</h4>
-                                    <p>Application</p>
-                                </div>
-                            </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section-contact">
+        <section class="section-contact" id="contact">
             <div class="row">
                 <h2>contact</h2>
             </div>
@@ -272,19 +272,22 @@
             <div class="row info">
                 <div class="col span-1-of-2">
                     <p>
-                    Copyright &copy; 2017 by Omnifood. All rights reserved.
+                    &copy; 2017 Douglas Dunn <span>&middot;</span> San Jose, CA, US
                     </p>
                 </div>
                 <div class="col span-1-of-2">
                     <ul class="social-links">
-                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                        <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com/douglas.dunn.125" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/DouglasDunn15" target="_blank"><i class="ion-social-twitter"></i></a></li>
                     </ul>
                 </div>
             </div>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="vendors/js/isotope.pkgd.min.js"></script>
+        <script src="resources/js/script.js"></script>
 
     </body>
 </html>

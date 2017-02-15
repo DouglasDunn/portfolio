@@ -263,6 +263,33 @@ header {
     text-decoration: none;
 }
 
+.button {
+    border: none;
+    background: transparent;
+    font-weight: 300;
+    color: #5a7077;
+    text-transform: uppercase;
+    padding: 6px 20px 5px;
+    border-radius: 3px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 80%;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color .2s, color .2s;
+}
+
+.button:hover {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+.button.is-checked {
+  color: white;
+  /*text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);*/
+  background-color: #1abc9c;
+}
+
 .container{
     /*background: url('../img/omnifood.png');*/
     width: 100%;
@@ -558,12 +585,12 @@ footer p {
   border: 0;
   color: #5a7077;
   transition: color 0.2s;
-  font-size: 140%;
+  font-size: 150%;
 }
 
 .social-links li a:link,
 .social-links li a:visited {
-  font-size: 140%;
+  font-size: 150%;
 }
 
 .up-icon-div {
@@ -583,4 +610,13 @@ footer p {
 
 .info {
     margin-top: 30px;
+    word-spacing: 1px;
 }
+
+/*.info span {
+    font-size: 800%;
+}*/
+
+/* ----------------------------------------- */
+/* Animations */
+/* ----------------------------------------- */
