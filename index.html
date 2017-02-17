@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
 
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
         <title>Portfolio</title>
 
@@ -18,13 +19,13 @@
 
         <header>
             <nav>
-                <div class="row">
-                    <ul class="main-nav">
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#work">Work</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+                <!-- <div class="row"> -->
+                <ul class="main-nav">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <!-- </div> -->
             </nav>
             <div class="hero-text-box">
                 <h1>Front End &middot; UI/UX &middot; Wordpress</h1>
@@ -32,7 +33,7 @@
             </div>
         </header>
 
-        <section class="section-services" id="services">
+        <section class="section-services js--section-services" id="services">
             <div class="row">
                 <h2>services</h2>
             </div>
@@ -270,23 +271,34 @@
                 <a href="#" class="up-icon"><i class="ion-chevron-up"></i></a>
             </div>
             <div class="row info">
+                <ul class="social-links">
+                    <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com/douglas.dunn.125" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/DouglasDunn15" target="_blank"><i class="ion-social-twitter"></i></a></li>
+                </ul>
+                <p>
+                    &copy; 2017 Douglas Dunn <span>&middot;</span> San Jose, CA, US
+                </p>
+            </div>
+            <!-- <div class="row info">
                 <div class="col span-1-of-2">
                     <p>
                     &copy; 2017 Douglas Dunn <span>&middot;</span> San Jose, CA, US
                     </p>
                 </div>
-                <div class="col span-1-of-2">
+                <div class="col span-1-of-2 last-footer-col">
                     <ul class="social-links">
                         <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
                         <li><a href="https://www.facebook.com/douglas.dunn.125" target="_blank"><i class="ion-social-facebook"></i></a></li>
                         <li><a href="https://twitter.com/DouglasDunn15" target="_blank"><i class="ion-social-twitter"></i></a></li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </footer>
 
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script src="vendors/js/isotope.pkgd.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
         <script src="resources/js/script.js"></script>
 
     </body>

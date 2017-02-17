@@ -20,6 +20,7 @@ body {
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .clearfix {
@@ -58,7 +59,8 @@ h4 {
 }
 
 h1 {
-    margin-top: 213px;
+    /*margin-top: 213px;*/
+    margin-top: 0;
     color: #fff;
     font-size: 240%;
     word-spacing: 4px;
@@ -166,7 +168,7 @@ a:active {
 /* ----------------------------------------- */
 
 header {
-    background-image: linear-gradient(rgba(4, 41, 34, 0.7), rgba(4, 41, 34, 0.2)), url(img/hero.jpg);
+    background-image: linear-gradient(rgba(4, 41, 34, 0.7), rgba(4, 41, 34, 0.2)), url(img/hero-min.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -175,13 +177,24 @@ header {
 
 .hero-text-box {
     text-align: center;
+    padding-top: 285px;
 }
 
 /* Main navi */
+nav {
+    /*margin-bottom: 300px;*/
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: all 5s;
+}
+
 .main-nav {
     float: right;
     list-style: none;
     margin-top: 45px;
+    margin-right: 60px;
 }
 
 .main-nav li {
@@ -211,17 +224,46 @@ header {
     border-bottom: 1px solid #1abc9c;
 }
 
+/* Sticky navi */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(253,253,253);
+    border-bottom: 1px solid #5a7077;
+    z-index: 9999;
+}
+
+/*nav.sticky {
+    margin-bottom: 500px;
+}*/
+
+.sticky .main-nav {
+    /*float: right;
+    list-style: none;*/
+    margin-top: 18px;
+    margin-right: 60px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    /*color: rgb(253,253,253);
+    opacity: .7;
+    text-decoration: none;
+    font-size: 95%;*/
+    color: #5a7077;
+    opacity: 1;
+    font-size: 90%;
+}
+
 /* ----------------------------------------- */
-/* SERVICS */
+/* SERVICES */
 /* ----------------------------------------- */
 
 .section-services {
     background-color: rgb(248,248,248);
-}
-
-.button-group {
-    text-align: center;
-    margin-bottom: 45px;
 }
 
 .section-services .box {
@@ -261,6 +303,11 @@ header {
 
 .section-work a {
     text-decoration: none;
+}
+
+.button-group {
+    text-align: center;
+    margin-bottom: 45px;
 }
 
 .button {
@@ -477,7 +524,7 @@ input#email {
 }
 
 input {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #5a7077;
 }
 
 textarea {
@@ -487,6 +534,7 @@ textarea {
     background-position: 19px 10px;
     background-size: 35px;
     padding-left: 70px;
+    border-bottom: 1px solid #5a7077;
 }
 
 input[type=submit] {
