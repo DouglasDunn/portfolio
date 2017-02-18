@@ -1,5 +1,7 @@
 $(document).ready(function() {
-
+/* ----------------------------------------- */
+/* isotope */
+/* ----------------------------------------- */
     var $grid = $('.grid').isotope({
         itemSelector: '.element-item',
         layoutMode: 'fitRows'
@@ -27,16 +29,16 @@ $(document).ready(function() {
             $("nav").removeClass("sticky");
         }
     }, {
-        //  offset: '635px'
         offset: '605px'
-        // offset: '500px'
     });
 
     /* Scroll on buttons */
+    //  Learn more button
     $(".js--scroll-to-services").click(function() {
         $("html, body").animate({scrollTop: $(".section-services").offset().top}, 1000);
     });
 
+    //  footer up icon
     $(".js--scroll-to-header").click(function() {
         $("html, body").animate({scrollTop: $("header").offset().top}, 1000);
     });
@@ -57,6 +59,9 @@ $(document).ready(function() {
         });
     });
 
+/* ----------------------------------------- */
+/* scrollspy */
+/* ----------------------------------------- */
     var stickyNavLinks = $(".sticky .main-nav li a"),
         navLinks = $(".main-nav li a")
         navH = $("nav").height(),
@@ -70,9 +75,6 @@ $(document).ready(function() {
             var self = $(this);
 
             if ( self.offset().top < (currentScrollPos + navH) && (currentScrollPos + navH) < (self.offset().top + self.outerHeight()) ) {
-                // console.log("self offset", self.offset().top + 100);
-                // console.log("currentPos", currentScrollPos + navH);
-                // console.log("without navh currentPos", currentScrollPos);
                 var targetClass = "." + self.attr("class") + "-marker";
                 navLinks.removeClass("active");
                 stickyNavLinks.removeClass("active");
@@ -140,5 +142,39 @@ $(document).ready(function() {
     }, {
         offset: "80%"
     });
+
+    /* Mobile nav */
+    $(".js--nav-icon").click(function() {
+        var nav = $(".js--main-nav");
+        var icon = $(".js--nav-icon i");
+
+        nav.slideToggle(200);
+        if (icon.hasClass("ion-navicon-round")) {
+            icon.addClass("ion-close-round");
+            icon.removeClass("ion-navicon-round");
+        } else {
+            icon.addClass("ion-navicon-round");
+            icon.removeClass("ion-close-round");
+        }
+    });
+
+    //This works basically like a media query for jQuery, where we can take different actions depending on the screen width
+    //fixes the bug for after you click the x icon and resize the window to a full width screen to show the nav
+    $(window).resize(function(){
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon i');
+
+        if ($(window).width() > 767){
+            nav.css("display", "block");
+            icon.addClass('ion-close-round');
+            icon.removeClass('ion-navicon-round');
+        } else {
+            nav.css("display", "none");
+            icon.addClass('ion-navicon-round');
+            icon.removeClass('ion-close-round');
+        }
+
+    });
+
 
 });
