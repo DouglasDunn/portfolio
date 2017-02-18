@@ -195,6 +195,7 @@ nav {
     list-style: none;
     margin-top: 45px;
     margin-right: 60px;
+    /*padding-bottom: 1px;*/
 }
 
 .main-nav li {
@@ -211,6 +212,7 @@ nav {
 }
 
 .main-nav li a:after {
+    /*padding-bottom: -1px;*/
     display:block;
     content: '';
     border-bottom: solid 1px #1abc9c;
@@ -220,9 +222,19 @@ nav {
 
 .main-nav li a:hover:after { transform: scaleX(1); }
 
-.main-nav li a:active {
+.sticky .main-nav li .active {
+    padding-bottom: 1px;
     border-bottom: 1px solid #1abc9c;
 }
+
+.main-nav li .active {
+    /*padding-bottom: 1px;*/
+    border-bottom: 1px solid #1abc9c;
+}
+
+/*.main-nav li a:active {
+    border-bottom: 1px solid #1abc9c;
+}*/
 
 /* Sticky navi */
 .sticky {
@@ -668,3 +680,28 @@ footer p {
 /* ----------------------------------------- */
 /* Animations */
 /* ----------------------------------------- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4,
+.js--wp-5,
+.js--wp-6,
+.js--wp-7,
+.js--wp-8,
+.js--wp-9 {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated,
+.js--wp-4.animated,
+.js--wp-5.animated,
+.js--wp-6.animated,
+.js--wp-7.animated,
+.js--wp-8.animated,
+.js--wp-9.animated {
+    opacity: 1;
+}
