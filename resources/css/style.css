@@ -122,6 +122,7 @@ p {
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -147,6 +148,7 @@ p {
 /* ----------------------------------------- */
 
 header {
+    background-image: -webkit-linear-gradient(rgba(4, 41, 34, 0.7), rgba(4, 41, 34, 0.2)), url(img/hero-min.jpg);
     background-image: linear-gradient(rgba(4, 41, 34, 0.7), rgba(4, 41, 34, 0.2)), url(img/hero-min.jpg);
     background-size: cover;
     background-position: center;
@@ -165,6 +167,7 @@ nav {
     position: fixed;
     top: 0;
     right: 0;
+    -webkit-transition: all .5s;
     transition: all .5s;
 }
 
@@ -192,11 +195,15 @@ nav {
     display:block;
     content: '';
     border-bottom: solid 1px #1abc9c;
-    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: -webkit-transform 250ms ease-in-out;
+    transition: -webkit-transform 250ms ease-in-out;
     transition: transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 
-.main-nav li a:hover:after { transform: scaleX(1); }
+.main-nav li a:hover:after { -webkit-transform: scaleX(1); transform: scaleX(1); }
 
 .sticky .main-nav li .active {
     padding-bottom: 1px;
@@ -259,10 +266,12 @@ nav {
 }
 
 .section-services .box {
+  background: -webkit-linear-gradient(left, #000, #000), -webkit-linear-gradient(left, #000, #000), -webkit-linear-gradient(top, #000, #000), -webkit-linear-gradient(top, #000, #000);
   background: linear-gradient(to right, #000, #000), linear-gradient(to right, #000, #000), linear-gradient(to bottom, #000, #000), linear-gradient(to bottom, #000, #000);
   background-position: 0% 0%, 100% 100%, 0% 0%, 100% 100%;
   background-size: 0% 1px, 0% 1px, 1px 0%, 1px 0%;
   background-repeat: no-repeat;
+  -webkit-transition: all .5s;
   transition: all .5s;
 }
 
@@ -305,6 +314,7 @@ nav {
     letter-spacing: 1px;
     outline: none;
     cursor: pointer;
+    -webkit-transition: background-color .2s, color .2s;
     transition: background-color .2s, color .2s;
 }
 
@@ -384,6 +394,7 @@ nav {
 }
 
 .container .overlay{
+  background: -webkit-linear-gradient(315deg,rgba(8,12,19,.9),rgba(0,102,102,.9));
   background: linear-gradient(135deg,rgba(8,12,19,.9),rgba(0,102,102,.9));
   position: absolute;
   margin: auto;
@@ -475,6 +486,7 @@ textarea:placeholder {
 
 input#name {
     float: right;
+    background: url(../img/name-contactform.svg) no-repeat, -webkit-linear-gradient(transparent, transparent);
     background: url(../img/name-contactform.svg) no-repeat, linear-gradient(transparent, transparent);
     background-position: 20px 11px;
     background-size: 35px;
@@ -482,6 +494,7 @@ input#name {
 }
 
 input#email {
+    background: url(../img/email-contactform.svg) no-repeat, -webkit-linear-gradient(transparent, transparent);
     background: url(../img/email-contactform.svg) no-repeat, linear-gradient(transparent, transparent);
     background-position: 19px 10px;
     background-size: 35px;
@@ -494,6 +507,7 @@ input {
 
 textarea {
     height: 150px;
+    background: url(../img/message-contactform.svg) no-repeat, -webkit-linear-gradient(transparent, transparent);
     background: url(../img/message-contactform.svg) no-repeat, linear-gradient(transparent, transparent);
     background-position: 19px 10px;
     background-size: 35px;
@@ -505,6 +519,7 @@ input[type=submit] {
     width: 145px;
     height: 55px;
     float: right;
+    background: url(../img/send.svg) no-repeat, -webkit-linear-gradient(transparent, transparent);
     background: url(../img/send.svg) no-repeat, linear-gradient(transparent, transparent);
     background-position: 36px 16.5px;
     background-size: 20px auto;
@@ -514,6 +529,7 @@ input[type=submit] {
     padding: 10px 36px 9px 65px;
     text-transform: uppercase;
     border-radius: 3px;
+    -webkit-transition: background-color 0.35s;
     transition: background-color 0.35s;
 }
 
@@ -578,6 +594,7 @@ footer p {
   text-decoration: none;
   border: 0;
   color: #5a7077;
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
   font-size: 150%;
 }
@@ -594,6 +611,7 @@ footer p {
 .up-icon:link,
 .up-icon:visited {
     font-size: 260%;
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
@@ -621,7 +639,8 @@ footer p {
 .js--wp-8,
 .js--wp-9 {
     opacity: 0;
-    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
 }
 
 .js--wp-1.animated,
